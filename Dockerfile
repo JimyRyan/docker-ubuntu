@@ -20,7 +20,7 @@ RUN set -eux \
 		git \
 		ca-certificates \
 		net-tools \
-		vi \
+		vim \
 		curl \
 		wget \
     && apt-get -y dist-upgrade \
