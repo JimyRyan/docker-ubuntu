@@ -16,7 +16,13 @@ ENV TZ ${local_tz}
 
 RUN set -eux \
 	&& apt-get update -yqq \
-	&& apt-get install -y --no-install-recommends git ca-certificates \
+	&& apt-get install -y --no-install-recommends \
+		git \
+		ca-certificates \
+		net-tools \
+		vi \
+		curl \
+		wget \
     && apt-get -y dist-upgrade \
     && apt-get autoremove -y \
     # remove apt cache from image
